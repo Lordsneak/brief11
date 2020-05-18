@@ -15,28 +15,29 @@
         $sql = "SELECT * FROM `articles` ORDER BY id";
         $res = $conn->query($sql);
         while($row=mysqli_fetch_array($res))
-        $data[]=$row;
+        $post[]=$row;
         
         
-        foreach($res as $data) 
-        
-          if (!empty($data)){
-        
-          $id = $data["id"];
-          $title = $data["title"];
-          $content = $data["content"];
-          $date = $data["date"];
-          $admin = "<div><a href='del_post.php?pid=$id'>Delete</a> <a href='edit.php?pid=$id'>Edit</a></div>";
-          $posts = "<div><h2><a href='view_post.php?pid=$id'>$title</a></h2><p>$content</p> <h3>$date</h3>$admin</div>";
 
-            } else {
-                echo "No Data";
-            }
-              
-    ?>
-    <div class="feedbody">
+	foreach ($res as $post): ?>
+			<div class="post" style="margin-left: 0px;">
+				<img src="<?php echo BASE_URL . '/static/images/' . $post['image']; ?>" class="post_image" alt="">
+				<!-- Added this if statement... -->
+				<?php if (isset($post['topic']['name'])): ?>
+				<?php endif ?>
+					<div class="post_info">
+						<h3><?php echo $post['title'] ?></h3>
+						<div class="info">
+							<p><?php echo $post['content'] ?></p>
+							<span><?php echo $post["date"]; ?></span>
+							
+						</div>
+					</div>
+				</a>
+			</div>
+		<?php endforeach ?> 
 
-<div class="title"><?php echo $posts; ?></div>
+
 
 
 </div>
