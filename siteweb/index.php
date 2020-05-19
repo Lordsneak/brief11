@@ -84,7 +84,7 @@
 
 							<div class="collapse navbar-collapse" id="navbarSupportedContent">
 								<ul class="navbar-nav ml-auto">
-									<li class="nav-item active"><a class="page-scroll" href="#home">Home</a></li>
+									<li class="nav-item active"><a class="page-scroll" href="index.php">Home</a></li>
 									<li class="nav-item"><a class="page-scroll" href="login.php">Login</a></li>
 									<li class="nav-item"><a class="page-scroll" href="admin/post.php">Add Post</a></li>
 
@@ -99,22 +99,7 @@
 
 
 		</div> <!-- container -->
-		<div class="header-social">
-			<div class="container">
-				<div class="row">
-					<div class="col-lg-12">
-						<div class="header-social-icon">
-							<ul>
-								<li><a href="#"><i class="lni-facebook-filled"></i></a></li>
-								<li><a href="#"><i class="lni-twitter-original"></i></a></li>
-								<li><a href="#"><i class="lni-behance-original"></i></a></li>
-								<li><a href="#"><i class="lni-linkedin-original"></i></a></li>
-							</ul>
-						</div> <!-- header social -->
-					</div>
-				</div> <!-- row -->
-			</div> <!-- container -->
-		</div> <!-- header social -->
+		
 		</div> <!-- header content -->
 	</header>
 
