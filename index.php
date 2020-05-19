@@ -85,7 +85,8 @@
 							<div class="collapse navbar-collapse" id="navbarSupportedContent">
 								<ul class="navbar-nav ml-auto">
 									<li class="nav-item active"><a class="page-scroll" href="#home">Home</a></li>
-									<li class="nav-item"><a class="page-scroll" href="admin/post">Add Post</a></li>
+									<li class="nav-item"><a class="page-scroll" href="login.php">Login</a></li>
+									<li class="nav-item"><a class="page-scroll" href="admin/post.php">Add Post</a></li>
 
 								</ul>
 							</div> <!-- navbar collapse -->
@@ -130,31 +131,31 @@
         while($row=mysqli_fetch_array($res))
         $post[]=$row;
 		foreach ($res as $post): ?>
-							
 
-		<section id="about" class="about-area pt-125 pb-130">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="about-content mt-50">
-                        <h1 class="about-title"><?php echo $post['title'] ?></h1>
-                        <p><?php echo $post['content'] ?></p>
-                        <ul class="clearfix">
-                            <li>
-                                <div class="single-info d-flex align-items-center">
-                                    <div class="info-text">
-                                        <p><span>Create at :</span> <?php echo $post["date"]; ?></p>
-									</div>
-									
-                                </div> <!-- single info -->
-                            </li>
-                           
-                        </div> <!-- skill item -->
-                    </div> <!-- about skills -->
-                </div>
-            </div> <!-- row -->
-        </div> <!-- container -->
-    </section>
+
+				<section id="about" class="about-area pt-125 pb-130">
+					<div class="container">
+						<div class="row">
+							<div class="col-lg-12">
+								<div class="about-content mt-50">
+									<h1 class="about-title"><?php echo $post['title'] ?></h1>
+									<p><?php echo $post['content'] ?></p>
+									<ul class="clearfix">
+										<li>
+											<div class="single-info d-flex align-items-center">
+												<div class="info-text">
+													<p><span>Create at :</span> <?php echo $post["date"]; ?></p>
+												</div>
+
+											</div> <!-- single info -->
+										</li>
+
+								</div> <!-- skill item -->
+							</div> <!-- about skills -->
+						</div>
+					</div> <!-- row -->
+			</div> <!-- container -->
+	</section>
 	<?php endforeach ?>
 	<!--====== ABOUT PART ENDS ======-->
 

@@ -44,6 +44,7 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
                 <div class="col-md-12">
                     <div class="page-header clearfix">
                         <h2 class="pull-left">Dashbord</h2>
+                        <a href="../index.php" class="btn btn-success pull-right">link web</a>
                         <a href="logout.php" class="btn btn-success pull-right">Logout</a>
                         <a href="post.php" class="btn btn-success pull-right">Add Post</a>
                     </div>

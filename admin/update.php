@@ -100,20 +100,22 @@ if(isset($_POST["id"]) && !empty($_POST["id"])){
     }
 }
 ?>
- 
+
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <title>Update Record</title>
+    <title>Blog - Update</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.css">
     <style type="text/css">
-        .wrapper{
+        .wrapper {
             width: 500px;
             margin: 0 auto;
         }
     </style>
 </head>
+
 <body>
     <div class="wrapper">
         <div class="container-fluid">
@@ -134,13 +136,14 @@ if(isset($_POST["id"]) && !empty($_POST["id"])){
                             <textarea name="content" class="form-control"><?php echo $content; ?></textarea>
                             <span class="help-block"><?php echo $content_err;?></span>
                         </div>
-                        <input type="hidden" name="id" value="<?php echo $id; ?>"/>
+                        <input type="hidden" name="id" value="<?php echo $id; ?>" />
                         <input type="submit" class="btn btn-primary" value="Submit">
                         <a href="index.php" class="btn btn-default">Cancel</a>
                     </form>
                 </div>
-            </div>        
+            </div>
         </div>
     </div>
 </body>
+
 </html>

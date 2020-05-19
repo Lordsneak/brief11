@@ -31,16 +31,33 @@ if(isset($_POST['post'])) {
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog - Add Post</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.css">
+    <style type="text/css">
+        .wrapper {
+            width: 500px;
+            margin: 0 auto;
+        }
+    </style>
     <title>Blog - Post</title>
 </head>
 
 <body>
-    <form action="post.php" method="post" enctype=multipart/form-data> 
-        <input placeholder="Title" name="title" type="text" autofocus size="48"> <br /><br />
-        <textarea name="content" id="" cols="50" rows="20"></textarea><br /><br />
-        <input type="submit" name="post" value="Add Article">
-    </form>
+    <div class="wrapper">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="page-header">
+                        <form action="post.php" method="post" enctype=multipart/form-data> <input placeholder="Title"
+                            name="title" type="text"> <br /><br />
+                            <textarea name="content" id="" cols="50" rows="20"></textarea><br /><br />
+                            <input type="submit" name="post" value="Add Article">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
 </body>
 
